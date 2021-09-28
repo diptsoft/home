@@ -3,45 +3,173 @@
 <html>
     <head>
         <title>DIPTSOFT </title>
-        <link rel="icon" href="dipt_logo.png" type="image/icon type">
+        <link rel="icon" href="Icon.png" type="image/icon type">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
         <meta name="description" content="This is Official Diptsoft Official Website.We make games and app on Android,IOS and Windows Platforms.">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        
+
+        <style>
+          *{
+
+            margin: 0;
+            padding: 0;
+           }
+                * {box-sizing: border-box;}
+                body {font-family: Verdana, sans-serif;}
+                .mySlides {display: none;}
+                .mySlides1 {display: none;}
+                img {vertical-align: middle;}
+                
+
+                
+                /* Number text (1/3 etc) */
+                .numbertext {
+                  color: #f2f2f2;
+                  font-size: 12px;
+                  padding: 8px 12px;
+                  position: relative;
+                  top: 0;
+                  text-align: center;
+                }
+                .social{
+                  border: 2px solid rgb(56, 2, 2);
+                  border-radius: 50px 20px;
+                  margin-top: 0.2rem;
+                  position: fixed;
+                  top: 25%;
+                  display: block;
+                  background-color: rgb(6, 20, 1);
+                  padding-right: 10px;
+                  margin: -10px;
+                }
+                
+                /* The dots/bullets/indicators */
+                .dot {
+                  height: 15px;
+                  width: 15px;
+              
+                  background-color: #bbb;
+                  border-radius: 50%;
+                  display: inline-block;
+                  transition: background-color 0.6s ease;
+                 margin-top: 10px;
+                }
+                .dot1 {
+                  height: 15px;
+                  width: 15px;
+                  margin-top: 10px;
+                  background-color: #bbb;
+                  border-radius: 50%;
+                  display: inline-block;
+                  transition: background-color 0.6s ease;
+                }
+                
+                .active {
+                  background-color: #717171;
+                }
+                
+                /* Fading animation */
+                .fade {
+                  -webkit-animation-name: fade;
+                  -webkit-animation-duration: 2.5s;
+                  animation-name: fade;
+                  animation-duration: 2.5s;
+                }
+                .third{
+                  text-align: center;
+                  padding: 10%;
+                  font-size: 2.2vh;
+                }
+                
+                @-webkit-keyframes fade {
+                  from {opacity: .4} 
+                  to {opacity: 1}
+                }
+                
+                @keyframes fade {
+                  from {opacity: .4} 
+                  to {opacity: 1}
+                }
+                
+                /* On smaller screens, decrease text size */
+                @media only screen and (max-width: 300px) {
+                  .text {font-size: 11px}
+                }
+
+               a:hover{
+                 text-decoration: none;
+               }
+               .foot{
+                 background-color: rgb(3, 59, 3);
+                 
+               }
+
+               #myBtn {
+                
+                position: fixed; 
+                bottom: 20px; 
+                right: 30px;
+                color: white;
+                cursor: pointer;
+                border-radius: 50%;
+                background-color: #bf07f757;
+                
+               }
+
+                #myBtn:hover {
+                  background-color: #555;
+              }
+              
+
+             
+
+                </style>
+                
+
     </head>
-    <body style="background-color: black; color: cyan;">
-        <div style="background-color: greenyellow; height: 60px;  width: inherit; text-align: center;">
-            <table style="width: 100%;" >
+    <body style="background-color: black; color: cyan;" >
+      <div  data-aos="zoom-in-up"></div>
+        <div style="background-color: #172e08; padding: 40px;  width: 100vw; text-align: center">
+            <table style="width: 100%;">
             <thead>
-                <th><a href="https://diptsoft.com/" class="fa fa-home" style=" color:red"></a><a href="https://diptsoft.com"  style="color: black; ">Home</a></th>
-                <th><a href="https://diptsoft.com/android" class="fa fa-android" style=" color:green"></a><a href="https://diptsoft.com/android"  style="color: black; ">Android</a></th>
-                <th><a href="https://diptsoft.com/ios" class="fa fa-apple" style=" color:white"></a><a href="https://diptsoft.com/ios" style="color: black; ">IOS</a></th>
-                <th><a href="https://diptsoft.com/windows" class="fa fa-windows" style=" color:blue"></a><a href="https://diptsoft.com/Windows"  style="color: black; ">Windows</a></th>
-                <th><a href="https://diptsoft.com/aboutus" style="color: black; ">About us</a></th>
+                <th id="home" ><a href="https://diptsoft.com/" class="fa fa-home" style=" color:rgb(146, 148, 12)"></a><a href="https://diptsoft.com"  style="color: rgb(179, 189, 175); ">Home</a></th>
+                <th id="android" ><a href="https://diptsoft.com/android" class="fa fa-android" style=" color:green"></a><a href="https://diptsoft.com/android" style="color: rgb(179, 189, 175); ">Android</a></th>
+                <th id="ios" ><a href="https://diptsoft.com/ios" class="fa fa-apple"  style=" color:rgb(204, 204, 204)"></a><a href="https://diptsoft.com/ios"  style="color: rgb(179, 189, 175);  ">IOS</a></th>
+                <th id="windows"><a href="https://diptsoft.com/windows" class="fa fa-windows"  style=" color:rgb(62, 60, 180)"></a><a href="https://diptsoft.com/Windows"  style="color: rgb(179, 189, 175); ">Windows</a></th>
             </thead>
             </table>
         </div> 
-        <div>
-            <h1 align="center" > Welcome to DiptSoft <br><br></h1>
+        <div id="welcome">
+            <h1 style="text-align: center; padding-top: 30px; font-family: cursive;" > Welcome to DiptSoft <br><br></h1>
         </div>
-        <div class="slideshow-container" >
+        <div class="slideshow-container" data-aos="zoom-in-up">
             <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="game1.png" style="width:100%">
-              <div class="text">Ojump</div>
+              <div class="numbertext" >1 / 3</div>
+              <div style="text-align: center; color: rgb(16, 199, 10);">Ojump</div>
+             <img src="app1.jpg" style="width: 100vw;">
             </div>
                 
             <div class="mySlides fade">
               <div class="numbertext">2 / 3</div>
-              <img src="game2.png" style="width:100%">
-              <div class="text">jovo king</div>
+              <div style="text-align: center; color: rgb(16, 199, 10);">jovo king</div>
+              <img src="app2.png"  style="width: 100vw;">
             </div>
                 
             <div class="mySlides fade">
               <div class="numbertext">3 / 3</div>
-              <img src="game3.png" style="width:100%">
-              <div class="text">Game</div>
+              <div style="text-align: center; color: rgb(16, 199, 10);">Game</div>
+              <img src="app1.jpg"  style="width: 100vw;">
             </div>
             <div style="text-align:center">
                     <span class="dot"></span> 
@@ -51,26 +179,27 @@
                     
             </div>
         <br>
+        <h1 id="a" style="text-align: center; font-weight: bolder; color: #0788af;"> Apps</h1>
 
-
-        <div class="slideshow-container">
+        <div class="slideshow-container" data-aos="zoom-in-up">
             <div class="mySlides1 fade">
               <div class="numbertext">1 / 3</div>
-              <img src="app1.png" style="width:100%">
+              <img src="app1.jpg"  style="width: 100vw;">
               <div class="text">nesh</div>
             </div>
                 
             <div class="mySlides1 fade">
               <div class="numbertext">2 / 3</div>
-              <img src="app2.png" style="width:100%">
-              <div class="text">nesh</div>
+              <img src="app2.png"  style="width: 100vw;">
+              <div style="text-align: center; color: rgb(16, 199, 10);">Nesh</div>
             </div>
                 
             <div class="mySlides1 fade">
               <div class="numbertext">3 / 3</div>
-              <img src="app3.png" style="width:100%">
-              <div class="text">sudoku solver</div>
+              <img src="app3.jpg"  style="width: 100vw;">
+              <div style="text-align: center; color: rgb(16, 199, 10);"> Suduco Solver</div>
             </div>
+      
             <div style="text-align:center">
                     <span class="dot1"></span> 
                     <span class="dot1"></span> 
@@ -79,161 +208,104 @@
                 
         </div>
         <br>
+        <h1 id="g" style="text-align: center; font-weight: bolder; color: #0788af;"> Games </h1>
+
+
+
+        <div class="social" data-aos="zoom-in-up" >
+          
+                  <div><a href="https://instagram.com/diptsoft" class="fa fa-instagram" style="color: rgb(194, 28, 83);" id="insta" ></a></div>
+                  <div><a href="https://www.facebook.com/diptsoft.dipt.1" class="fa fa-facebook" id="fb"> </a></div>
+                  <div><a href="https://twitter.com/diptsoft" class="fa fa-twitter" id="twit" style="color: aqua;"></a></div>
+                  <div><a href="https://www.youtube.com/channel/UCzsnloqSy6zEfnLkpywfrBQ" id="yt" class="fa fa-youtube" style="color: rgb(201, 56, 56);"></a></div>
+                  <div><a href="https://join.skype.com/invite/YijwXqGsA82f" class="fa fa-skype" id="skyp"  style="color: rgb(9, 122, 122);"></a></div>
+                  <div><a href="https://github.com/diptsoft" class="fa fa-github" id="git" style="color: #85b863;"></a></div>
+          
+        </div>
+        <img src="arw.png" width="60px" onclick="topFunction()" id="myBtn">
+
+      <div  class ="third" data-aos="zoom-in-up" >
+      <p> This is 3rd section of this page. Some aditional information/features goimg to here This is 3rd section of this page. Some aditional information/features goimg to hereThis is 3rd section of this page. Some aditional information/features goimg to hereThis is 3rd section of this page. Some aditional information/features goimg to hereThis is 3rd section of this page. Some aditional information/features goimg to here</p>
+      </div>
+
+  
         
-
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <style> .fa{padding: 20px; font-size: 20px; width: 20px; text-align: center; text-decoration: none; border-radius: 90%;}</style>
 
-        <div style="background-color: green; height: 200px; text-align: center; position: center; ">
-        	
-            <table style="width: 100%">
-                <tr>
-                    <th>
-                        <h1 align="center">Contact us</h1>
-                    </th>
-                </tr>
-            </table>
-            <table style="width: 100%;">
-                <tr>
-                    <th>
-                        <a href="https://instagram.com/diptsoft" class="fa fa-instagram" style="background:rgb(173, 220, 235);  color:rgb(211, 43, 226)"></a>
-                        <a href="https://www.facebook.com/diptsoft.dipt.1" class="fa fa-facebook" style="background:rgb(173, 220, 235); color:blue"></a>
-                        <a href="https://twitter.com/diptsoft" class="fa fa-twitter" style="background:rgb(173, 220, 235); color:rgb(100, 214, 248)"></a>
-                        <a href="https://www.youtube.com/channel/UCzsnloqSy6zEfnLkpywfrBQ" class="fa fa-youtube" style="background:rgb(173, 220, 235); color:rgb(148, 6, 6)"></a>
-                        <a href="https://snapchat.com/diptsoft" class="fa fa-snapchat" style="background:rgb(173, 220, 235); color:yellow"></a>
-                        <a href="https://join.skype.com/invite/YijwXqGsA82f" class="fa fa-skype" style="background:rgb(173, 220, 235); color:blueviolet"></a>
-                        <a href="https://instagram.com/diptsoft" class="fa fa-google" style="background:rgb(173, 220, 235); color:rgb(204, 68, 19)"></a>
-                        <a href="https://github.com/diptsoft" class="fa fa-github" style="background:rgb(173, 220, 235); color:rgb(158, 145, 172)"></a>
-                    </th>
-                </tr>
-                
-            </table>
-        </div>
 
-        <script>
-                var slideIndex = 0;
-                showSlides();
-                
-                function showSlides() {
-                  var i;
-                  var slides = document.getElementsByClassName("mySlides");
-                  var dots = document.getElementsByClassName("dot");
-                  for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                  }
-                  slideIndex++;
-                  if (slideIndex > slides.length) {slideIndex = 1}    
-                  for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                  }
-                  slides[slideIndex-1].style.display = "block";  
-                  dots[slideIndex-1].className += " active";
-                  setTimeout(showSlides, 3500); // Change image every 2 seconds
-                }
-        </script>
-        <script>
-                var slideIndex1 = 0;
-                showSlides1();
-                
-                function showSlides1() {
-                  var i;
-                  var slides1 = document.getElementsByClassName("mySlides1");
-                  var dots1 = document.getElementsByClassName("dot1");
-                  for (i = 0; i < slides1.length; i++) {
-                    slides1[i].style.display = "none";  
-                  }
-                  slideIndex1++;
-                  if (slideIndex1 > slides1.length) {slideIndex1 = 1}    
-                  for (i = 0; i < dots1.length; i++) {
-                    dots1[i].className = dots1[i].className.replace(" active", "");
-                  }
-                  slides1[slideIndex1-1].style.display = "block";  
-                  dots1[slideIndex1-1].className += " active";
-                  setTimeout(showSlides1, 4000); // Change image every 2 seconds
-                }
-        </script>
+    
+<footer class="page-footer font-small indigo foot">
 
-<style>
-        * {box-sizing: border-box;}
-        body {font-family: Verdana, sans-serif;}
-        .mySlides {display: none;}
-        .mySlides1 {display: none;}
-        img {vertical-align: middle;}
+  <div class="container text-center text-md-left">
+    
+    <div class="row">
+      
+      <hr class="clearfix w-100 d-md-none">
+
+      <div class="col-md-3 mx-auto">
+
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-warning">Services</h5>
+
+        <ul class="list-unstyled" style="font-weight: bold;">
+          <li>
+            <a href="#!">Games</a>
+          </li>
+          <li>
+            <a href="#!">Apps</a>
+          </li>
+          <li>
+            <a href="#!">Softweres</a>
+          </li>
+          <li>
+            <a href="#!">Others</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <div class="col-md-3 mx-auto">
+
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4  text-warning">Get in</h5>
+
+        <ul class="list-unstyled"  style="font-weight: bold;">
+          <li>
+            <a href="#!">Community</a>
+          </li>
+          <li>
+            <a href="#!">Help Us</a>
+          </li>
+          <li>
+            <a href="#!">Support</a>
+          </li>
+          <li>
+            <a href="#!">Donations</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <hr class="clearfix w-100 d-md-none">      
+
+    </div>
+
+  </div>
+
+  
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://diptsoft.com/"> DiptSoft </a>
+  </div>
+  
+
+</footer>
+
+    
         
-        /* Slideshow container */
-        .slideshow-container {
-          max-width: 1000px;
-          position: relative;
-          margin: auto;
-        }
-        
-        /* Caption text */
-        .text {
-          color: #f2f2f2;
-          font-size: 15px;
-          padding: 8px 12px;
-          position: absolute;
-          bottom: 8px;
-          width: 100%;
-          text-align: center;
-        }
-        
-        /* Number text (1/3 etc) */
-        .numbertext {
-          color: #f2f2f2;
-          font-size: 12px;
-          padding: 8px 12px;
-          position: absolute;
-          top: 0;
-        }
-        
-        /* The dots/bullets/indicators */
-        .dot {
-          height: 15px;
-          width: 15px;
-          margin: 0 2px;
-          background-color: #bbb;
-          border-radius: 50%;
-          display: inline-block;
-          transition: background-color 0.6s ease;
-        }
-        .dot1 {
-          height: 15px;
-          width: 15px;
-          margin: 0 2px;
-          background-color: #bbb;
-          border-radius: 50%;
-          display: inline-block;
-          transition: background-color 0.6s ease;
-        }
-        
-        .active {
-          background-color: #717171;
-        }
-        
-        /* Fading animation */
-        .fade {
-          -webkit-animation-name: fade;
-          -webkit-animation-duration: 2.5s;
-          animation-name: fade;
-          animation-duration: 2.5s;
-        }
-        
-        @-webkit-keyframes fade {
-          from {opacity: .4} 
-          to {opacity: 1}
-        }
-        
-        @keyframes fade {
-          from {opacity: .4} 
-          to {opacity: 1}
-        }
-        
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-          .text {font-size: 11px}
-        }
-        </style>
-        
+        <script src="indexPage.js"> </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+    </script>
+
     </body>
